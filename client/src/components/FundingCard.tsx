@@ -83,12 +83,12 @@ export default function FundingCard({ funding }: FundingCardProps) {
           <h4 className="text-sm font-semibold mb-2 text-white">Focus Areas</h4>
           <div className="flex flex-wrap gap-1.5">
             {funding.focus_areas.slice(0, 4).map((area, idx) => (
-              <Badge key={idx} variant="outline" className="text-xs">
+              <Badge key={idx} variant="outline" className="text-xs text-yellow-400 border-yellow-400">
                 {area}
               </Badge>
             ))}
             {funding.focus_areas.length > 4 && (
-              <Badge variant="outline" className="text-xs">
+              <Badge variant="outline" className="text-xs text-yellow-400 border-yellow-400">
                 +{funding.focus_areas.length - 4} more
               </Badge>
             )}
@@ -124,7 +124,7 @@ export default function FundingCard({ funding }: FundingCardProps) {
                 <h3 className="font-semibold text-lg mb-2 text-white">Focus Areas</h3>
                 <div className="flex flex-wrap gap-2">
                   {funding.focus_areas.map((area, idx) => (
-                    <Badge key={idx} variant="secondary">
+                    <Badge key={idx} variant="secondary" className="text-yellow-400 bg-yellow-950 border-yellow-600">
                       {area}
                     </Badge>
                   ))}
