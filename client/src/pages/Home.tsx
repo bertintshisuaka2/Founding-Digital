@@ -87,7 +87,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-900">
       {/* Header Section */}
       <header className="bg-gradient-to-r from-green-900 via-green-950 to-black border-b border-green-700">
         <div className="container py-4">
@@ -108,7 +108,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-700 via-blue-800 to-blue-900 text-white relative overflow-hidden">
+      <section className="bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white relative overflow-hidden">
         <div className="container py-16 md:py-24 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       {/* Listen to Digital Leaders Section */}
-      <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+      <section className="bg-gray-900 py-16">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -162,7 +162,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Video 1: Digital Transformation */}
-            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700">
               <div className="aspect-video">
                 <iframe
                   className="w-full h-full"
@@ -186,7 +186,7 @@ export default function Home() {
             </div>
 
             {/* Video 2: AI Leadership */}
-            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+            <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden border border-gray-700">
               <div className="aspect-video">
                 <iframe
                   className="w-full h-full"
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       {/* Search and Filter Section */}
-      <section className="bg-white dark:bg-gray-900 border-b">
+      <section className="bg-gray-800 border-b border-gray-700">
         <div className="container py-8">
           <div className="space-y-4">
             <div className="relative">
@@ -311,7 +311,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-100 dark:bg-gray-950 border-t mt-12">
+      <footer className="bg-black border-t border-gray-800 mt-12">
         <div className="container py-8">
           <div className="text-center text-sm text-muted-foreground">
             <p className="mb-2">

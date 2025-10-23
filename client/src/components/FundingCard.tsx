@@ -53,7 +53,7 @@ export default function FundingCard({ funding }: FundingCardProps) {
   };
 
   return (
-    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow">
+    <Card className="h-full flex flex-col hover:shadow-lg transition-shadow bg-gray-800 border-gray-700">
       <CardHeader>
         <div className="flex items-start justify-between gap-2 mb-2">
           <Badge variant="secondary" className="text-xs">
