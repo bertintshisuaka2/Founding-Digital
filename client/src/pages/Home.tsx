@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import FundingCard from "@/components/FundingCard";
 import NewsActivities from "@/components/NewsActivities";
+import WorldStats from "@/components/WorldStats";
 import { Search, Filter, Globe, TrendingUp, Users, Sparkles } from "lucide-react";
 
 interface FundingSource {
@@ -315,8 +316,11 @@ export default function Home() {
         )}
       </section>
 
+      {/* World Statistics Section */}
+      <WorldStats />
+
       {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 mt-12">
+      <footer className="bg-black text-gray-400 py-8 border-t border-gray-800">
         <div className="container py-8">
           <div className="text-center text-sm text-gray-400">
             <p className="mb-2">
