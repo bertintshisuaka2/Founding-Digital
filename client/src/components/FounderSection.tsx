@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
-import { Globe } from "lucide-react";
+import { Globe, Volume2 } from "lucide-react";
 
 export default function FounderSection() {
   const [language, setLanguage] = useState<"en" | "fr">("en");
@@ -115,6 +115,28 @@ Merci pour votre temps, votre engagement et votre foi en l'avenir numérique de 
 
               {/* Speech Content */}
               <div className="md:col-span-2">
+                {/* Audio Player */}
+                <div className="mb-6 bg-gradient-to-r from-blue-900 to-purple-900 rounded-lg p-4 border border-blue-700">
+                  <div className="flex items-center gap-4">
+                    <Volume2 className="w-6 h-6 text-blue-300" />
+                    <div className="flex-1">
+                      <p className="text-sm text-gray-300 mb-2">
+                        {language === "en" ? "Listen to the speech:" : "Écoutez le discours :"}
+                      </p>
+                      <audio 
+                        controls 
+                        className="w-full"
+                        key={language}
+                      >
+                        <source src={language === "en" ? "/speech-english.wav" : "/speech-french.wav"} type="audio/wav" />
+                        {language === "en" 
+                          ? "Your browser does not support the audio element." 
+                          : "Votre navigateur ne prend pas en charge l'élément audio."}
+                      </audio>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                   <div className="prose prose-invert max-w-none">
                     <div className="text-gray-200 leading-relaxed whitespace-pre-line text-justify">
