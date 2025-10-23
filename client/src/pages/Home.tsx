@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import FundingCard from "@/components/FundingCard";
 import NewsActivities from "@/components/NewsActivities";
 import WorldStats from "@/components/WorldStats";
+import AfricaRegions from "@/components/AfricaRegions";
 import { Search, Filter, Globe, TrendingUp, Users, Sparkles } from "lucide-react";
 
 interface FundingSource {
@@ -315,6 +316,9 @@ export default function Home() {
           </div>
         )}
       </section>
+
+      {/* Africa Regions Section */}
+      <AfricaRegions />
 
       {/* World Statistics Section */}
       <WorldStats />

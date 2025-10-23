@@ -1,0 +1,449 @@
+{
+  "east_africa": {
+    "region_name": "East Africa",
+    "description": "Dynamic region with strong mobile technology adoption and growing digital economies",
+    "countries": [
+      {
+        "code": "KE",
+        "name": "Kenya",
+        "population": 54027487,
+        "youth_percent": 38.2,
+        "women_percent": 50.1,
+        "elderly_percent": 2.9,
+        "universities": 74,
+        "internet_users_percent": 87.2,
+        "digital_investment_usd": 620000000,
+        "digital_gap_score": 12.8,
+        "gdp_usd": 113420000000,
+        "mobile_money_users": 32500000,
+        "startups": 450,
+        "key_sectors": ["Fintech", "Agritech", "E-commerce"]
+      },
+      {
+        "code": "ET",
+        "name": "Ethiopia",
+        "population": 123379924,
+        "youth_percent": 40.6,
+        "women_percent": 49.9,
+        "elderly_percent": 3.5,
+        "universities": 45,
+        "internet_users_percent": 37.7,
+        "digital_investment_usd": 450000000,
+        "digital_gap_score": 62.3,
+        "gdp_usd": 126783000000,
+        "mobile_money_users": 8200000,
+        "startups": 180,
+        "key_sectors": ["E-government", "Agriculture", "Education"]
+      },
+      {
+        "code": "TZ",
+        "name": "Tanzania",
+        "population": 65497748,
+        "youth_percent": 43.5,
+        "women_percent": 50.3,
+        "elderly_percent": 3.1,
+        "universities": 61,
+        "internet_users_percent": 32.0,
+        "digital_investment_usd": 340000000,
+        "digital_gap_score": 68.0,
+        "gdp_usd": 75710000000,
+        "mobile_money_users": 18500000,
+        "startups": 220,
+        "key_sectors": ["Mobile money", "Agriculture", "Tourism"]
+      },
+      {
+        "code": "UG",
+        "name": "Uganda",
+        "population": 47249585,
+        "youth_percent": 47.2,
+        "women_percent": 50.4,
+        "elderly_percent": 2.2,
+        "universities": 53,
+        "internet_users_percent": 44.0,
+        "digital_investment_usd": 280000000,
+        "digital_gap_score": 56.0,
+        "gdp_usd": 45560000000,
+        "mobile_money_users": 12800000,
+        "startups": 165,
+        "key_sectors": ["Fintech", "Healthtech", "Agritech"]
+      },
+      {
+        "code": "RW",
+        "name": "Rwanda",
+        "population": 13776698,
+        "youth_percent": 39.7,
+        "women_percent": 50.8,
+        "elderly_percent": 3.1,
+        "universities": 31,
+        "internet_users_percent": 65.8,
+        "digital_investment_usd": 290000000,
+        "digital_gap_score": 34.2,
+        "gdp_usd": 13312000000,
+        "mobile_money_users": 5200000,
+        "startups": 95,
+        "key_sectors": ["ICT services", "E-government", "Innovation hubs"]
+      }
+    ],
+    "regional_stats": {
+      "total_population": 304431442,
+      "avg_internet_penetration": 53.3,
+      "total_investment": 1980000000,
+      "total_universities": 264,
+      "total_startups": 1110
+    }
+  },
+  "central_africa": {
+    "region_name": "Central Africa",
+    "description": "Resource-rich region with significant digital infrastructure development potential",
+    "countries": [
+      {
+        "code": "CD",
+        "name": "Democratic Republic of Congo",
+        "population": 99010212,
+        "youth_percent": 46.3,
+        "women_percent": 50.2,
+        "elderly_percent": 2.9,
+        "universities": 89,
+        "internet_users_percent": 23.2,
+        "digital_investment_usd": 420000000,
+        "digital_gap_score": 76.8,
+        "gdp_usd": 61050000000,
+        "mobile_money_users": 15600000,
+        "startups": 145,
+        "key_sectors": ["Mining tech", "Mobile banking", "E-commerce"]
+      },
+      {
+        "code": "CM",
+        "name": "Cameroon",
+        "population": 27914536,
+        "youth_percent": 42.3,
+        "women_percent": 50.4,
+        "elderly_percent": 3.2,
+        "universities": 68,
+        "internet_users_percent": 46.0,
+        "digital_investment_usd": 310000000,
+        "digital_gap_score": 54.0,
+        "gdp_usd": 45340000000,
+        "mobile_money_users": 8900000,
+        "startups": 125,
+        "key_sectors": ["Fintech", "Agriculture", "Logistics"]
+      },
+      {
+        "code": "CG",
+        "name": "Republic of Congo",
+        "population": 5970424,
+        "youth_percent": 41.8,
+        "women_percent": 50.1,
+        "elderly_percent": 3.5,
+        "universities": 12,
+        "internet_users_percent": 18.7,
+        "digital_investment_usd": 85000000,
+        "digital_gap_score": 81.3,
+        "gdp_usd": 12520000000,
+        "mobile_money_users": 1200000,
+        "startups": 35,
+        "key_sectors": ["Oil & gas tech", "Telecommunications", "Banking"]
+      },
+      {
+        "code": "GA",
+        "name": "Gabon",
+        "population": 2341179,
+        "youth_percent": 35.2,
+        "women_percent": 50.2,
+        "elderly_percent": 5.8,
+        "universities": 8,
+        "internet_users_percent": 72.0,
+        "digital_investment_usd": 120000000,
+        "digital_gap_score": 28.0,
+        "gdp_usd": 20560000000,
+        "mobile_money_users": 950000,
+        "startups": 28,
+        "key_sectors": ["E-government", "Digital services", "Fintech"]
+      },
+      {
+        "code": "CF",
+        "name": "Central African Republic",
+        "population": 5579144,
+        "youth_percent": 43.9,
+        "women_percent": 50.8,
+        "elderly_percent": 3.8,
+        "universities": 4,
+        "internet_users_percent": 11.0,
+        "digital_investment_usd": 45000000,
+        "digital_gap_score": 89.0,
+        "gdp_usd": 2570000000,
+        "mobile_money_users": 320000,
+        "startups": 12,
+        "key_sectors": ["Mobile connectivity", "Basic infrastructure", "Education"]
+      }
+    ],
+    "regional_stats": {
+      "total_population": 140805495,
+      "avg_internet_penetration": 34.2,
+      "total_investment": 980000000,
+      "total_universities": 181,
+      "total_startups": 345
+    }
+  },
+  "southern_africa": {
+    "region_name": "Southern Africa",
+    "description": "Most developed digital infrastructure in Africa with strong financial services sector",
+    "countries": [
+      {
+        "code": "ZA",
+        "name": "South Africa",
+        "population": 59893885,
+        "youth_percent": 28.3,
+        "women_percent": 50.7,
+        "elderly_percent": 5.9,
+        "universities": 26,
+        "internet_users_percent": 72.3,
+        "digital_investment_usd": 1200000000,
+        "digital_gap_score": 27.7,
+        "gdp_usd": 380906000000,
+        "mobile_money_users": 28500000,
+        "startups": 680,
+        "key_sectors": ["Fintech", "E-commerce", "Cybersecurity"]
+      },
+      {
+        "code": "ZW",
+        "name": "Zimbabwe",
+        "population": 16320537,
+        "youth_percent": 40.8,
+        "women_percent": 51.3,
+        "elderly_percent": 3.7,
+        "universities": 26,
+        "internet_users_percent": 35.0,
+        "digital_investment_usd": 180000000,
+        "digital_gap_score": 65.0,
+        "gdp_usd": 28370000000,
+        "mobile_money_users": 8200000,
+        "startups": 95,
+        "key_sectors": ["Mobile money", "Agriculture", "Mining tech"]
+      },
+      {
+        "code": "ZM",
+        "name": "Zambia",
+        "population": 20017675,
+        "youth_percent": 44.6,
+        "women_percent": 50.1,
+        "elderly_percent": 2.4,
+        "universities": 58,
+        "internet_users_percent": 21.0,
+        "digital_investment_usd": 250000000,
+        "digital_gap_score": 79.0,
+        "gdp_usd": 29800000000,
+        "mobile_money_users": 6500000,
+        "startups": 78,
+        "key_sectors": ["Fintech", "E-government", "Agriculture"]
+      },
+      {
+        "code": "BW",
+        "name": "Botswana",
+        "population": 2630296,
+        "youth_percent": 32.5,
+        "women_percent": 50.8,
+        "elderly_percent": 4.2,
+        "universities": 9,
+        "internet_users_percent": 67.0,
+        "digital_investment_usd": 140000000,
+        "digital_gap_score": 33.0,
+        "gdp_usd": 18340000000,
+        "mobile_money_users": 1200000,
+        "startups": 52,
+        "key_sectors": ["Diamond tech", "Tourism", "E-government"]
+      },
+      {
+        "code": "NA",
+        "name": "Namibia",
+        "population": 2604172,
+        "youth_percent": 35.8,
+        "women_percent": 50.5,
+        "elderly_percent": 4.1,
+        "universities": 11,
+        "internet_users_percent": 51.0,
+        "digital_investment_usd": 95000000,
+        "digital_gap_score": 49.0,
+        "gdp_usd": 12360000000,
+        "mobile_money_users": 850000,
+        "startups": 38,
+        "key_sectors": ["Tourism tech", "Mining", "Conservation tech"]
+      },
+      {
+        "code": "MW",
+        "name": "Malawi",
+        "population": 20405317,
+        "youth_percent": 44.2,
+        "women_percent": 51.0,
+        "elderly_percent": 3.0,
+        "universities": 15,
+        "internet_users_percent": 17.0,
+        "digital_investment_usd": 120000000,
+        "digital_gap_score": 83.0,
+        "gdp_usd": 13160000000,
+        "mobile_money_users": 4200000,
+        "startups": 45,
+        "key_sectors": ["Agriculture", "Mobile money", "Education"]
+      }
+    ],
+    "regional_stats": {
+      "total_population": 124471882,
+      "avg_internet_penetration": 43.9,
+      "total_investment": 1985000000,
+      "total_universities": 145,
+      "total_startups": 988
+    }
+  },
+  "drc_special": {
+    "country_name": "Democratic Republic of Congo",
+    "flag_description": "Sky blue with yellow star and diagonal red stripe",
+    "capital": "Kinshasa",
+    "official_language": "French",
+    "population": 99010212,
+    "area_km2": 2344858,
+    "provinces": 26,
+    "major_cities": ["Kinshasa", "Lubumbashi", "Mbuji-Mayi", "Kananga", "Kisangani", "Goma"],
+    "demographics": {
+      "youth_0_14": 46.3,
+      "youth_15_24": 19.2,
+      "adults_25_54": 28.6,
+      "adults_55_64": 3.5,
+      "elderly_65_plus": 2.9,
+      "women_percent": 50.2,
+      "men_percent": 49.8,
+      "urban_population_percent": 46.2,
+      "rural_population_percent": 53.8
+    },
+    "education": {
+      "universities": 89,
+      "technical_institutes": 156,
+      "literacy_rate": 77.0,
+      "primary_enrollment": 89.2,
+      "secondary_enrollment": 52.3,
+      "tertiary_enrollment": 9.4
+    },
+    "digital_landscape": {
+      "internet_users_percent": 23.2,
+      "internet_users_total": 22970000,
+      "mobile_subscriptions": 42500000,
+      "mobile_penetration_percent": 42.9,
+      "smartphone_users": 18200000,
+      "broadband_subscribers": 850000,
+      "fiber_optic_coverage_km": 12500,
+      "data_centers": 8,
+      "tech_hubs": 15
+    },
+    "digital_economy": {
+      "digital_investment_2025_usd": 420000000,
+      "digital_economy_gdp_percent": 3.8,
+      "digital_economy_value_usd": 2320000000,
+      "mobile_money_users": 15600000,
+      "mobile_money_transactions_annual_usd": 8500000000,
+      "e_commerce_market_size_usd": 450000000,
+      "tech_startups": 145,
+      "tech_jobs": 28500
+    },
+    "digital_gap_analysis": {
+      "overall_gap_score": 76.8,
+      "infrastructure_gap": 82.5,
+      "affordability_gap": 71.2,
+      "skills_gap": 68.9,
+      "content_gap": 74.3,
+      "investment_needed_usd": 12500000000,
+      "timeline_years": 8
+    },
+    "opportunities": [
+      {
+        "sector": "Mobile Money & Fintech",
+        "market_size_usd": 15000000000,
+        "growth_rate": 28.5,
+        "key_players": ["Vodacom M-Pesa", "Orange Money", "Airtel Money"],
+        "opportunity_score": 9.2
+      },
+      {
+        "sector": "E-Commerce",
+        "market_size_usd": 2500000000,
+        "growth_rate": 35.7,
+        "key_players": ["Jumia", "Glovo", "Local marketplaces"],
+        "opportunity_score": 8.8
+      },
+      {
+        "sector": "Agritech",
+        "market_size_usd": 3200000000,
+        "growth_rate": 22.4,
+        "key_players": ["Agripredict", "FarmDrive", "Local cooperatives"],
+        "opportunity_score": 8.5
+      },
+      {
+        "sector": "Healthtech",
+        "market_size_usd": 1800000000,
+        "growth_rate": 31.2,
+        "key_players": ["mPharma", "Telehealth platforms", "Digital diagnostics"],
+        "opportunity_score": 9.0
+      },
+      {
+        "sector": "Edtech",
+        "market_size_usd": 950000000,
+        "growth_rate": 26.8,
+        "key_players": ["Schoolap", "Digital learning platforms", "MOOC providers"],
+        "opportunity_score": 8.3
+      }
+    ],
+    "key_challenges": [
+      "Limited electricity access (19% of population)",
+      "High cost of internet and devices",
+      "Inadequate digital infrastructure in rural areas",
+      "Low digital literacy rates",
+      "Political instability in some regions",
+      "Limited local content in Congolese languages"
+    ],
+    "government_initiatives": [
+      {
+        "name": "Digital Congo 2025",
+        "budget_usd": 850000000,
+        "focus": "National fiber optic backbone, digital government services",
+        "status": "In Progress"
+      },
+      {
+        "name": "Smart Cities Program",
+        "budget_usd": 320000000,
+        "focus": "Digital infrastructure in Kinshasa, Lubumbashi, Goma",
+        "status": "Planning Phase"
+      },
+      {
+        "name": "Digital Skills Initiative",
+        "budget_usd": 180000000,
+        "focus": "Training 500,000 youth in digital skills by 2027",
+        "status": "Active"
+      }
+    ],
+    "international_support": [
+      {
+        "organization": "World Bank",
+        "project": "DRC Digital Acceleration Project",
+        "funding_usd": 250000000,
+        "timeline": "2024-2029"
+      },
+      {
+        "organization": "African Development Bank",
+        "project": "Central Africa Fiber Optic Network",
+        "funding_usd": 180000000,
+        "timeline": "2023-2027"
+      },
+      {
+        "organization": "European Union",
+        "project": "Digital Congo Partnership",
+        "funding_usd": 95000000,
+        "timeline": "2025-2028"
+      }
+    ],
+    "natural_resources_digitalization": {
+      "mining_sector_digital_investment_usd": 420000000,
+      "blockchain_for_minerals": true,
+      "satellite_monitoring": true,
+      "ai_exploration": true,
+      "digital_supply_chain": "In Development"
+    }
+  }
+}
+
