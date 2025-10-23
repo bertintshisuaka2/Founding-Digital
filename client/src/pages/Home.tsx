@@ -102,7 +102,8 @@ export default function Home() {
               <h2 className="text-xl font-bold text-yellow-400">
                 Diva Laser Software Solutions
               </h2>
-              <p className="text-sm text-yellow-200">Bertin Tshisuaka</p>
+              <p className="text-sm text-yellow-200">Developed by Bertin Tshisuaka</p>
+              <p className="text-xs text-yellow-300">Software Engineer and Full Stack Web Developer</p>
             </div>
           </div>
         </div>
