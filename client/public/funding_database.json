@@ -1,0 +1,671 @@
+{
+  "funding_sources": [
+    {
+      "id": 1,
+      "name": "Africa Digital Rights Fund (ADRF)",
+      "organization": "CIPESA",
+      "type": "Grant Program",
+      "region": "Pan-African",
+      "website": "https://cipesa.org/the-africa-digital-rights-fund-english/",
+      "grant_range_min": 1000,
+      "grant_range_max": 20000,
+      "currency": "USD",
+      "duration_months": 6,
+      "focus_areas": [
+        "Digital rights",
+        "Access and affordability",
+        "Data protection and privacy",
+        "Digital economy",
+        "Digital security",
+        "Digital literacy"
+      ],
+      "eligible_applicants": [
+        "Human rights defenders",
+        "Media organizations",
+        "Activists",
+        "Think tanks",
+        "Legal aid groups",
+        "Tech hubs",
+        "NGOs"
+      ],
+      "application_process": "Submit proposal through CIPESA website. Reviewed by internal and external panel of experts.",
+      "selection_criteria": [
+        "Fit within Fund's digital rights priorities",
+        "Relevance to given context/country",
+        "Commitment and experience in advancing digital rights",
+        "Potential impact on digital rights policies or practices"
+      ],
+      "success_tips": [
+        "Focus on marginalized/vulnerable populations (women, sexual minorities, PWDs, refugees)",
+        "Demonstrate direct advancement of digital rights",
+        "Show clear potential impact",
+        "Include cost sharing if possible"
+      ],
+      "deadline_type": "Rolling",
+      "contact_email": "info@cipesa.org"
+    },
+    {
+      "id": 2,
+      "name": "Digital Transformation with Africa (DTA)",
+      "organization": "USAID / U.S. Department of State",
+      "type": "Government Initiative",
+      "region": "Pan-African",
+      "website": "https://2021-2025.state.gov/digital-transformation-with-africa/",
+      "grant_range_min": 0,
+      "grant_range_max": 0,
+      "total_investment": 350000000,
+      "facilitated_financing": 450000000,
+      "currency": "USD",
+      "focus_areas": [
+        "Digital access",
+        "Digital literacy",
+        "Digital enabling environments",
+        "Infrastructure development",
+        "Connectivity"
+      ],
+      "eligible_applicants": [
+        "Government entities",
+        "Private sector companies",
+        "NGOs",
+        "Development organizations"
+      ],
+      "application_process": "Contact USAID missions in respective countries or U.S. Trade and Development Agency (USTDA) for partnership opportunities.",
+      "selection_criteria": [
+        "Alignment with DTA goals",
+        "Scalability and sustainability",
+        "Partnership potential",
+        "Infrastructure impact"
+      ],
+      "success_tips": [
+        "Coordinate through Africa Digital Policy Council",
+        "Focus on infrastructure and connectivity projects",
+        "Demonstrate potential for large-scale impact",
+        "Partner with local governments"
+      ],
+      "deadline_type": "Ongoing",
+      "contact_email": "Contact local USAID mission"
+    },
+    {
+      "id": 3,
+      "name": "Google.org Accelerator: Generative AI",
+      "organization": "Google.org",
+      "type": "Accelerator Program",
+      "region": "Global (including Africa)",
+      "website": "https://impactchallenge.withgoogle.com/genaiaccelerator",
+      "total_fund": 30000000,
+      "currency": "USD",
+      "additional_support": [
+        "6 months pro bono assistance from Google employees",
+        "Technical training",
+        "Google Cloud credits"
+      ],
+      "focus_areas": [
+        "Knowledge, Skills & Learning",
+        "Scientific Progress",
+        "Stronger Communities",
+        "AI innovation",
+        "Digital skills"
+      ],
+      "eligible_applicants": [
+        "Nonprofits globally",
+        "Organizations eligible for Google for Nonprofits"
+      ],
+      "application_process": "Apply during open call periods announced on website. Selection evaluates AI-powered solutions and potential impact.",
+      "selection_criteria": [
+        "Innovative use of generative AI",
+        "Social impact potential",
+        "Scalability",
+        "Beneficiary reach"
+      ],
+      "success_tips": [
+        "Demonstrate clear AI application for social good",
+        "Show potential to reach significant beneficiaries",
+        "Align with one of three focus areas",
+        "Register for Google for Nonprofits first"
+      ],
+      "deadline_type": "Periodic Open Calls",
+      "additional_programs": [
+        {
+          "name": "Google Ad Grants",
+          "amount": 10000,
+          "frequency": "monthly",
+          "type": "In-kind advertising"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Mastercard Foundation - Digital Programs",
+      "organization": "Mastercard Foundation",
+      "type": "Foundation",
+      "region": "Africa",
+      "website": "https://mastercardfdn.org",
+      "total_commitment": 770000000,
+      "total_youth_commitment": 4700000000,
+      "commitment_year": 2030,
+      "currency": "USD",
+      "focus_areas": [
+        "Digital access",
+        "Digital skills",
+        "Youth entrepreneurship",
+        "Financial inclusion",
+        "Internet connectivity"
+      ],
+      "key_initiatives": [
+        {
+          "name": "Partnership for Digital Access in Africa (PDAA)",
+          "goal": "Double internet connectivity from 40% to 80%"
+        }
+      ],
+      "eligible_applicants": [
+        "Youth-focused organizations",
+        "Digital skills training providers",
+        "Educational institutions",
+        "NGOs"
+      ],
+      "application_process": "Partnership-based approach. Contact Mastercard Foundation for collaboration opportunities.",
+      "selection_criteria": [
+        "Youth-centered programs",
+        "Scalability",
+        "Digital empowerment focus",
+        "Sustainable impact"
+      ],
+      "success_tips": [
+        "Focus on youth (18-35 years)",
+        "Demonstrate scalable model",
+        "Show clear pathway to employment or entrepreneurship",
+        "Partner with established organizations"
+      ],
+      "deadline_type": "Partnership-based"
+    },
+    {
+      "id": 5,
+      "name": "Bill & Melinda Gates Foundation - Digital Initiatives",
+      "organization": "Bill & Melinda Gates Foundation",
+      "type": "Foundation",
+      "region": "Africa",
+      "website": "https://www.gatesfoundation.org",
+      "recent_grants": [
+        {
+          "recipient": "Senegal Digital Transformation",
+          "amount": 10000000
+        },
+        {
+          "recipient": "Rwanda AI Scaling Hub",
+          "amount": 17500000
+        }
+      ],
+      "currency": "USD",
+      "focus_areas": [
+        "Digital financial inclusion",
+        "Digital Public Infrastructure",
+        "Payment systems",
+        "Government digital transformation",
+        "AI innovation"
+      ],
+      "eligible_applicants": [
+        "Government entities",
+        "Research institutions",
+        "NGOs",
+        "Technology organizations"
+      ],
+      "application_process": "Primarily proactive grantmaking. Foundation identifies opportunities. Partnership-based approach recommended.",
+      "selection_criteria": [
+        "Alignment with Foundation priorities",
+        "Scalability",
+        "Sustainability",
+        "Evidence-based approach"
+      ],
+      "success_tips": [
+        "Focus on financial inclusion for unbanked populations",
+        "Demonstrate sustainable model",
+        "Show evidence of impact",
+        "Build relationships with Foundation program officers"
+      ],
+      "deadline_type": "Proactive/Partnership"
+    },
+    {
+      "id": 6,
+      "name": "World Bank - Digital Economy for Africa (DE4A)",
+      "organization": "World Bank",
+      "type": "Development Bank",
+      "region": "Africa",
+      "website": "https://www.worldbank.org/en/programs/all-africa-digital-transformation",
+      "total_program_value": 2500000000,
+      "currency": "USD",
+      "goal": "Every individual, business, and government in Africa digitally enabled by 2030",
+      "focus_areas": [
+        "Digital infrastructure",
+        "Connectivity",
+        "Digital skills",
+        "Digital economy",
+        "Regional integration"
+      ],
+      "funding_types": [
+        "Low-interest loans",
+        "Zero to low-interest credits",
+        "Grants"
+      ],
+      "eligible_applicants": [
+        "Government entities",
+        "Regional organizations",
+        "Development partners"
+      ],
+      "application_process": "Through government partnerships. Contact World Bank country offices for project-based funding opportunities.",
+      "selection_criteria": [
+        "Development impact",
+        "Sustainability",
+        "Regional integration potential",
+        "Government commitment"
+      ],
+      "success_tips": [
+        "Work through government channels",
+        "Focus on infrastructure and connectivity",
+        "Demonstrate regional impact",
+        "Align with national digital strategies"
+      ],
+      "deadline_type": "Project-based"
+    },
+    {
+      "id": 7,
+      "name": "African Development Bank - Digital Programs",
+      "organization": "African Development Bank (AfDB)",
+      "type": "Development Bank",
+      "region": "Africa",
+      "website": "https://www.afdb.org",
+      "programs": [
+        {
+          "name": "Africa Digital Financial Inclusion Facility (ADFI)",
+          "grant_range_min": 650000,
+          "focus": "Digital financial services for women and youth"
+        },
+        {
+          "name": "African Development Fund (ADF)",
+          "focus": "Concessional financing for least developed countries"
+        },
+        {
+          "name": "Fund for African Private Sector Assistance (FAPA)",
+          "focus": "Technical assistance and capacity building"
+        }
+      ],
+      "currency": "USD",
+      "focus_areas": [
+        "Digital financial inclusion",
+        "Infrastructure development",
+        "Capacity building",
+        "Private sector development"
+      ],
+      "eligible_applicants": [
+        "African-based organizations",
+        "Government entities",
+        "Private sector operators",
+        "NGOs"
+      ],
+      "application_process": "Structured application through AfDB portal. Must meet eligibility criteria. Project proposals evaluated on development impact.",
+      "selection_criteria": [
+        "Development impact",
+        "Financial sustainability",
+        "Alignment with AfDB priorities",
+        "Capacity of implementing organization"
+      ],
+      "success_tips": [
+        "Focus on women and youth",
+        "Demonstrate financial sustainability",
+        "Show clear development impact",
+        "Partner with government entities"
+      ],
+      "deadline_type": "Rolling/Project-based"
+    },
+    {
+      "id": 8,
+      "name": "European Union - Global Gateway Africa",
+      "organization": "European Union",
+      "type": "Government Initiative",
+      "region": "Africa",
+      "website": "https://international-partnerships.ec.europa.eu",
+      "focus_areas": [
+        "Digital connectivity",
+        "Digital services",
+        "Green and digital transformation",
+        "Innovation",
+        "Infrastructure"
+      ],
+      "eligible_applicants": [
+        "Government entities",
+        "Regional organizations",
+        "NGOs",
+        "Private sector"
+      ],
+      "application_process": "Through EU delegation offices in African countries. Partnership with African Union. Project-based funding applications.",
+      "selection_criteria": [
+        "Alignment with EU-Africa partnership priorities",
+        "Sustainability",
+        "Innovation",
+        "Inclusive growth potential"
+      ],
+      "success_tips": [
+        "Contact EU delegation in your country",
+        "Focus on sustainable digital connectivity",
+        "Demonstrate innovation",
+        "Partner with government or regional bodies"
+      ],
+      "deadline_type": "Project-based"
+    },
+    {
+      "id": 9,
+      "name": "ITU - Digital Africa Initiatives",
+      "organization": "International Telecommunication Union",
+      "type": "UN Agency",
+      "region": "Africa",
+      "website": "https://www.itu.int",
+      "programs": [
+        {
+          "name": "Policy and Regulation Initiative for Digital Africa (PRIDA)",
+          "focus": "Affordable broadband, spectrum management, internet governance"
+        },
+        {
+          "name": "ICT Development Fund",
+          "project": "Accelerating Africa's Digital Transformation Through Connectivity",
+          "period": "2021-2024"
+        }
+      ],
+      "focus_areas": [
+        "Digital transformation",
+        "Broadband development",
+        "Cybersecurity",
+        "Innovation ecosystems",
+        "Policy and regulation"
+      ],
+      "eligible_applicants": [
+        "Government entities",
+        "Telecom regulators",
+        "ICT ministries",
+        "Regional organizations"
+      ],
+      "application_process": "Contact ITU Regional Office for Africa. Partnership with national governments. Technical assistance programs.",
+      "selection_criteria": [
+        "Alignment with ITU priorities",
+        "Government support",
+        "Regional impact",
+        "Technical feasibility"
+      ],
+      "success_tips": [
+        "Work with national ICT ministry",
+        "Focus on policy and regulation",
+        "Demonstrate regional collaboration",
+        "Align with national broadband plans"
+      ],
+      "deadline_type": "Partnership-based"
+    },
+    {
+      "id": 10,
+      "name": "Microsoft Africa Initiatives",
+      "organization": "Microsoft",
+      "type": "Corporate",
+      "region": "Africa",
+      "website": "https://news.microsoft.com",
+      "investments": [
+        {
+          "name": "Africa Development Centre (ADC)",
+          "amount": 100000000,
+          "period": "5 years",
+          "locations": ["Kenya", "Nigeria"]
+        },
+        {
+          "name": "Kenya Digital Ecosystem",
+          "amount": 1000000000,
+          "partner": "G42"
+        }
+      ],
+      "currency": "USD",
+      "focus_areas": [
+        "Digital skills training",
+        "Technology capacity building",
+        "Innovation support",
+        "Infrastructure development"
+      ],
+      "eligible_applicants": [
+        "Nonprofits",
+        "Educational institutions",
+        "Government entities",
+        "Tech startups"
+      ],
+      "application_process": "Partnership opportunities through Microsoft Philanthropies. Skills training programs. Technology grants for nonprofits.",
+      "selection_criteria": [
+        "Alignment with Microsoft priorities",
+        "Scalability",
+        "Innovation",
+        "Social impact"
+      ],
+      "success_tips": [
+        "Focus on digital skills development",
+        "Leverage Microsoft technologies",
+        "Demonstrate scalable model",
+        "Partner with educational institutions"
+      ],
+      "deadline_type": "Partnership-based"
+    },
+    {
+      "id": 11,
+      "name": "Meta Digital Literacy & AI Programs",
+      "organization": "Meta (Facebook)",
+      "type": "Corporate",
+      "region": "Africa",
+      "website": "https://www.meta.com",
+      "programs": [
+        {
+          "name": "African AI Projects",
+          "grant_amount": 100000,
+          "partner": "Data Science Africa"
+        },
+        {
+          "name": "Global Literacy and Accessibility Challenge",
+          "grant_amount": 30000,
+          "duration": "1 year"
+        }
+      ],
+      "currency": "USD",
+      "focus_areas": [
+        "Digital literacy",
+        "AI innovation",
+        "Accessibility",
+        "Inclusion"
+      ],
+      "eligible_applicants": [
+        "AI startups",
+        "Research institutions",
+        "Nonprofits",
+        "Educational organizations"
+      ],
+      "application_process": "Application through Meta research awards portal. Partnership with Data Science Africa. Open calls announced periodically.",
+      "selection_criteria": [
+        "Innovation in AI",
+        "Social impact",
+        "Accessibility focus",
+        "Scalability"
+      ],
+      "success_tips": [
+        "Focus on AI applications for social good",
+        "Demonstrate accessibility improvements",
+        "Partner with Data Science Africa",
+        "Show clear beneficiary impact"
+      ],
+      "deadline_type": "Periodic Open Calls"
+    },
+    {
+      "id": 12,
+      "name": "Omidyar Network",
+      "organization": "Omidyar Network",
+      "type": "Philanthropy",
+      "region": "Global (including Africa)",
+      "website": "https://omidyar.com",
+      "programs": [
+        {
+          "name": "Tech Journalism Fund",
+          "grant_range_min": 5000,
+          "grant_range_max": 25000
+        }
+      ],
+      "currency": "USD",
+      "focus_areas": [
+        "Digital revolution",
+        "Technology impact",
+        "Digital Public Infrastructure",
+        "AI and emerging technologies",
+        "Tech journalism"
+      ],
+      "eligible_applicants": [
+        "Journalists",
+        "Media organizations",
+        "Tech organizations",
+        "Civil society"
+      ],
+      "application_process": "Application through online portal. Focus on technology impact and digital transformation. Regular open calls announced on website.",
+      "selection_criteria": [
+        "Quality of reporting/work",
+        "Technology impact focus",
+        "Ethical considerations",
+        "Public interest"
+      ],
+      "success_tips": [
+        "Focus on emerging technology impacts",
+        "Demonstrate journalistic excellence",
+        "Show public interest value",
+        "Address ethical dimensions of technology"
+      ],
+      "deadline_type": "Periodic Open Calls"
+    },
+    {
+      "id": 13,
+      "name": "Open Society Foundations - Africa Programs",
+      "organization": "Open Society Foundations",
+      "type": "Foundation",
+      "region": "Africa",
+      "website": "https://www.opensocietyfoundations.org",
+      "focus_areas": [
+        "Democratic governance",
+        "Economic advancement",
+        "Technology and society",
+        "Education",
+        "Justice and equity"
+      ],
+      "initiatives": [
+        "Civic engagement",
+        "Economic prosperity",
+        "Peacebuilding"
+      ],
+      "eligible_applicants": [
+        "NGOs",
+        "Civil society organizations",
+        "Individual fellows",
+        "Educational institutions"
+      ],
+      "application_process": "Application through Open Society Foundations portal. Both organizational grants and individual fellowships available.",
+      "selection_criteria": [
+        "Alignment with Open Society values",
+        "Democratic governance focus",
+        "Social justice impact",
+        "Sustainability"
+      ],
+      "success_tips": [
+        "Demonstrate commitment to open society values",
+        "Focus on justice and equity",
+        "Show grassroots impact",
+        "Address democratic governance"
+      ],
+      "deadline_type": "Rolling"
+    },
+    {
+      "id": 14,
+      "name": "Rockefeller Foundation - Digital Jobs Africa",
+      "organization": "Rockefeller Foundation",
+      "type": "Foundation",
+      "region": "Africa",
+      "website": "https://www.rockefellerfoundation.org",
+      "programs": [
+        {
+          "name": "Digital Jobs Africa (DJA)",
+          "launched": 2013,
+          "focus": "Youth employment and digital skills"
+        }
+      ],
+      "recent_commitments": [
+        {
+          "amount": 10900000,
+          "focus": "African-led clean energy solutions",
+          "year": 2024
+        }
+      ],
+      "currency": "USD",
+      "focus_areas": [
+        "Digital skills",
+        "Youth employment",
+        "Digital economy",
+        "Institutional capacity building",
+        "Economic development"
+      ],
+      "eligible_applicants": [
+        "Youth employment organizations",
+        "Training institutions",
+        "NGOs",
+        "Government entities"
+      ],
+      "application_process": "Partnership-based approach. Contact foundation for collaboration opportunities. Focus on scalable, African-led solutions.",
+      "selection_criteria": [
+        "Youth employment impact",
+        "Scalability",
+        "African-led solutions",
+        "Sustainability"
+      ],
+      "success_tips": [
+        "Focus on youth (under 35)",
+        "Demonstrate job creation potential",
+        "Show African leadership",
+        "Provide digital skills training"
+      ],
+      "deadline_type": "Partnership-based"
+    },
+    {
+      "id": 15,
+      "name": "Ford Foundation - Technology and Society",
+      "organization": "Ford Foundation",
+      "type": "Foundation",
+      "region": "Global (including Africa)",
+      "website": "https://www.fordfoundation.org",
+      "recent_grants": [
+        {
+          "recipient": "Digital Society Africa",
+          "amount": 1322250
+        }
+      ],
+      "currency": "USD",
+      "focus_areas": [
+        "Technology and society",
+        "Democratic governance",
+        "Economic justice",
+        "Education",
+        "Civic engagement"
+      ],
+      "eligible_applicants": [
+        "NGOs",
+        "Research institutions",
+        "Civil society organizations",
+        "Educational institutions"
+      ],
+      "application_process": "Majority of grants are proactive (Foundation identifies opportunities). Each program has its own strategy and selection process.",
+      "selection_criteria": [
+        "Alignment with Foundation priorities",
+        "Social justice impact",
+        "Institutional strength",
+        "Innovation"
+      ],
+      "success_tips": [
+        "Build relationships with program officers",
+        "Focus on technology's societal impact",
+        "Demonstrate institutional capacity",
+        "Show commitment to social justice"
+      ],
+      "deadline_type": "Proactive"
+    }
+  ]
+}
