@@ -20,7 +20,7 @@ export default function ContactForm() {
     e.preventDefault();
     
     // Create mailto link with form data
-    const mailtoLink = `mailto:contact@divalaser.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:bertintshisuaka@hotmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nOrganization: ${formData.organization}\n\nMessage:\n${formData.message}`
     )}`;
     
@@ -60,11 +60,20 @@ export default function ContactForm() {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Contact Information */}
-          <Card className="bg-gradient-to-br from-blue-950 to-purple-950 border-blue-700">
-            <CardHeader>
+          <Card className="bg-gradient-to-br from-blue-950 to-purple-950 border-blue-700 relative overflow-hidden">
+            {/* Background Image */}
+            <div className="absolute inset-0 opacity-20">
+              <img 
+                src="/atlanta-flag.jpg" 
+                alt="Downtown Atlanta" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative z-10">
+              <CardHeader>
               <CardTitle className="text-white text-2xl">Get in Touch</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-6">
+              </CardHeader>
+              <CardContent className="space-y-6">
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-blue-400 mt-1" />
                 <div>
@@ -78,8 +87,8 @@ export default function ContactForm() {
                 <Mail className="w-6 h-6 text-green-400 mt-1" />
                 <div>
                   <h3 className="text-white font-semibold mb-1">Email</h3>
-                  <a href="mailto:contact@divalaser.com" className="text-blue-400 hover:text-blue-300">
-                    contact@divalaser.com
+                  <a href="mailto:bertintshisuaka@hotmail.com" className="text-blue-400 hover:text-blue-300">
+                    bertintshisuaka@hotmail.com
                   </a>
                 </div>
               </div>
@@ -88,7 +97,9 @@ export default function ContactForm() {
                 <Phone className="w-6 h-6 text-yellow-400 mt-1" />
                 <div>
                   <h3 className="text-white font-semibold mb-1">Phone</h3>
-                  <p className="text-gray-300">Available upon request</p>
+                  <a href="tel:+16789796811" className="text-blue-400 hover:text-blue-300">
+                    +1 (678) 979-6811
+                  </a>
                 </div>
               </div>
 
@@ -100,7 +111,8 @@ export default function ContactForm() {
                   infrastructure for sustainable growth across the continent.
                 </p>
               </div>
-            </CardContent>
+              </CardContent>
+            </div>
           </Card>
 
           {/* Contact Form */}
