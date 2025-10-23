@@ -10,7 +10,7 @@ import AfricaRegions from "@/components/AfricaRegions";
 import FounderSection from "@/components/FounderSection";
 import ContactForm from "@/components/ContactForm";
 import Login from "@/components/Login";
-import { Search, Filter, Globe, TrendingUp, Users, Sparkles } from "lucide-react";
+import { Search, Filter, Globe, TrendingUp, Users, Sparkles, LogOut } from "lucide-react";
 
 interface FundingSource {
   id: number;
@@ -69,11 +69,7 @@ export default function Home() {
     localStorage.removeItem('isAuthenticated');
   };
 
-  // Show login screen if not authenticated
-  if (!isAuthenticated) {
-    return <Login onLogin={handleLogin} isAuthenticated={isAuthenticated} onLogout={handleLogout} />;
-  }
-
+  // All hooks must be called before any conditional returns
   const filteredFunding = useMemo(() => {
     if (!fundingData) return [];
 
@@ -116,10 +112,26 @@ export default function Home() {
     setSelectedDeadline("all");
   };
 
+  // Show login screen if not authenticated
+  if (!isAuthenticated) {
+    return <Login onLogin={handleLogin} isAuthenticated={isAuthenticated} onLogout={handleLogout} />;
+  }
+
   return (
     <div className="min-h-screen bg-gray-900">
       {/* Logout Button */}
-      <Login onLogin={handleLogin} isAuthenticated={isAuthenticated} onLogout={handleLogout} />
+      {isAuthenticated && (
+        <div className="fixed top-4 right-4 z-50">
+          <Button
+            onClick={handleLogout}
+            variant="outline"
+            className="bg-red-900 hover:bg-red-800 text-white border-red-700"
+          >
+            <LogOut className="w-4 h-4 mr-2" />
+            Logout
+          </Button>
+        </div>
+      )}
       
       {/* Header */}
       <header className="bg-gradient-to-r from-green-900 via-black to-green-900 border-b border-yellow-700">
