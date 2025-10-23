@@ -9,6 +9,7 @@ import WorldStats from "@/components/WorldStats";
 import AfricaRegions from "@/components/AfricaRegions";
 import FounderSection from "@/components/FounderSection";
 import ContactForm from "@/components/ContactForm";
+import Login from "@/components/Login";
 import { Search, Filter, Globe, TrendingUp, Users, Sparkles } from "lucide-react";
 
 interface FundingSource {
@@ -36,11 +37,20 @@ interface FundingData {
 }
 
 export default function Home() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [fundingData, setFundingData] = useState<FundingData | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedType, setSelectedType] = useState<string>("all");
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
   const [selectedDeadline, setSelectedDeadline] = useState<string>("all");
+
+  // Check authentication from localStorage
+  useEffect(() => {
+    const authStatus = localStorage.getItem('isAuthenticated');
+    if (authStatus === 'true') {
+      setIsAuthenticated(true);
+    }
+  }, []);
 
   useEffect(() => {
     fetch("/funding_database.json")
@@ -48,6 +58,21 @@ export default function Home() {
       .then((data) => setFundingData(data))
       .catch((err) => console.error("Failed to load funding data:", err));
   }, []);
+
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+    localStorage.setItem('isAuthenticated', 'true');
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem('isAuthenticated');
+  };
+
+  // Show login screen if not authenticated
+  if (!isAuthenticated) {
+    return <Login onLogin={handleLogin} isAuthenticated={isAuthenticated} onLogout={handleLogout} />;
+  }
 
   const filteredFunding = useMemo(() => {
     if (!fundingData) return [];
@@ -93,8 +118,11 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-900">
-      {/* Header Section */}
-      <header className="bg-gradient-to-r from-green-900 via-green-950 to-black border-b border-green-700">
+      {/* Logout Button */}
+      <Login onLogin={handleLogin} isAuthenticated={isAuthenticated} onLogout={handleLogout} />
+      
+      {/* Header */}
+      <header className="bg-gradient-to-r from-green-900 via-black to-green-900 border-b border-yellow-700">
         <div className="container py-4">
           <div className="flex items-center gap-4">
             <img 
