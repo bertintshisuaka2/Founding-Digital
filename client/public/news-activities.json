@@ -1,0 +1,141 @@
+{
+  "news_updates": [
+    {
+      "id": 1,
+      "title": "World Bank Launches $100M Digital Zambia Acceleration Project",
+      "organization": "World Bank",
+      "date": "2025-09-23",
+      "category": "New Funding",
+      "amount": "$100M",
+      "beneficiaries": "Youth, women, and vulnerable communities",
+      "description": "New program to expand inclusive digital access in Zambia, empowering marginalized groups through digital infrastructure and skills development.",
+      "source_url": "https://www.worldbank.org/en/news/press-release/2025/09/23/new-world-bank-program-helps-zambia-increase-jobs-through-inclusive-digital-access"
+    },
+    {
+      "id": 2,
+      "title": "Côte d'Ivoire Secures $95M UAE Funding for AI and Digital Governance",
+      "organization": "UAE Government",
+      "date": "2025-09-29",
+      "category": "New Funding",
+      "amount": "$95M",
+      "projects": ["Modular data center", "Sovereign cloud", "AI innovation center"],
+      "description": "Major investment to build digital infrastructure including data centers, cloud systems, and AI centers of excellence.",
+      "source_url": "https://iafrica.com/cote-divoire-secures-95m-uae-funding-for-ai-digital-governance-projects/"
+    },
+    {
+      "id": 3,
+      "title": "Afretec Network Awards $2.3M in Multi-Institutional Research Grants",
+      "organization": "Afretec Network",
+      "date": "2025-10-03",
+      "category": "Grants Awarded",
+      "amount": "$2.3M",
+      "beneficiaries": "Technology-focused universities across Africa",
+      "projects_funded": 8,
+      "description": "Pan-African collaboration awards up to $300,000 per institution for technology research and innovation projects.",
+      "source_url": "https://engineering.cmu.edu/news-events/news/2025/10/03-afretec-grants.html"
+    },
+    {
+      "id": 4,
+      "title": "$100M EXIM Financing Guarantee for Africa's Digital Sector",
+      "organization": "US EXIM Bank",
+      "date": "2025-09-25",
+      "category": "New Funding",
+      "amount": "$100M",
+      "description": "EXIM-backed financing guarantee unlocks capital and de-risks U.S. entry into Africa's fast-growing digital market.",
+      "source_url": "https://allafrica.com/view/group/main/main/id/00094191.html"
+    },
+    {
+      "id": 5,
+      "title": "Morocco-UNDP Launch Digital Transformation Facility for Africa",
+      "organization": "UNDP & Morocco",
+      "date": "2025-09-26",
+      "category": "New Initiative",
+      "description": "New facility to accelerate digital transformation in Arab States region and Africa through technical assistance and capacity building.",
+      "source_url": "https://www.undp.org/arab-states/press-releases/partnership-undp-kingdom-morocco-launches-new-facility-help-accelerate-digital-transformation-arab-states-region-and"
+    },
+    {
+      "id": 6,
+      "title": "African Union Announces Top 10 Innovators for Education Innovation 2025",
+      "organization": "African Union",
+      "date": "2025-09-23",
+      "category": "Success Story",
+      "innovators_selected": 10,
+      "description": "AU recognizes leading innovators transforming education through digital technologies across the continent.",
+      "source_url": "https://au.int/en/pressreleases/20250923/au-announces-top-10-innovators-innovating-education-africa-iea-2025"
+    },
+    {
+      "id": 7,
+      "title": "Africa's Tech Investment Momentum Returns with E-Mobility and AI Focus",
+      "organization": "Multiple Investors",
+      "date": "2025-10-22",
+      "category": "Trend Report",
+      "description": "Significant investments signal new growth phase for African tech sector, with focus on industrial innovation, e-mobility, and AI applications.",
+      "source_url": "https://furtherafrica.com/2025/10/22/africas-tech-momentum-returns-e-mobility-and-ai-investments-signal-new-growth-phase/"
+    },
+    {
+      "id": 8,
+      "title": "Digital Technologies Boost African Micro-Entrepreneurs",
+      "organization": "Brookings Institution",
+      "date": "2025-10-10",
+      "category": "Research Report",
+      "description": "New research shows digital adoption among micro-entrepreneurs can significantly boost economic gains when properly supported.",
+      "source_url": "https://www.brookings.edu/articles/digital-technologies-could-be-key-to-boosting-gains-for-african-micro-entrepreneurs/"
+    }
+  ],
+  "impact_statistics": {
+    "total_funding_2025": "$397.3M+",
+    "projects_funded": "50+",
+    "people_benefited": "2.5M+",
+    "countries_reached": 25,
+    "institutions_supported": 45,
+    "last_updated": "2025-10-23"
+  },
+  "upcoming_opportunities": [
+    {
+      "id": 1,
+      "title": "AfDB Digital Infrastructure Fund - Q4 2025",
+      "organization": "African Development Bank",
+      "deadline": "2025-12-15",
+      "estimated_amount": "$50M - $200M",
+      "focus": "Broadband infrastructure, data centers, digital payment systems",
+      "status": "Applications Opening Soon"
+    },
+    {
+      "id": 2,
+      "title": "Google.org AI for Africa Initiative",
+      "organization": "Google.org",
+      "deadline": "2025-11-30",
+      "estimated_amount": "$5M - $20M",
+      "focus": "AI applications for agriculture, healthcare, education",
+      "status": "Open for Applications"
+    },
+    {
+      "id": 3,
+      "title": "Mastercard Foundation Digital Skills Program 2026",
+      "organization": "Mastercard Foundation",
+      "deadline": "2026-01-31",
+      "estimated_amount": "$100M+",
+      "focus": "Youth digital skills training, job placement, entrepreneurship",
+      "status": "Pre-Application Phase"
+    },
+    {
+      "id": 4,
+      "title": "EU-Africa Digital Partnership Fund",
+      "organization": "European Union",
+      "deadline": "2025-11-15",
+      "estimated_amount": "$75M",
+      "focus": "Digital governance, cybersecurity, e-government services",
+      "status": "Open for Applications"
+    },
+    {
+      "id": 5,
+      "title": "Bill & Melinda Gates Foundation - Digital Financial Inclusion",
+      "organization": "Gates Foundation",
+      "deadline": "Rolling",
+      "estimated_amount": "$10M - $50M",
+      "focus": "Mobile money, digital payments, financial literacy",
+      "status": "Ongoing"
+    }
+  ]
+}
+

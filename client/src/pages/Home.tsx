@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import FundingCard from "@/components/FundingCard";
+import NewsActivities from "@/components/NewsActivities";
 import { Search, Filter, Globe, TrendingUp, Users, Sparkles } from "lucide-react";
 
 interface FundingSource {
@@ -147,6 +148,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* News and Activities Section */}
+      <NewsActivities />
 
       {/* Listen to Digital Leaders Section */}
       <section className="bg-gray-900 py-16">
