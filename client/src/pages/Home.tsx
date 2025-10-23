@@ -152,10 +152,10 @@ export default function Home() {
       <section className="bg-gray-900 py-16">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
               Listen to the Leaders of Digital Innovation
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Gain insights from visionary leaders and inventors shaping the future of AI and digital transformation
             </p>
           </div>
@@ -173,13 +173,13 @@ export default function Home() {
                 ></iframe>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 text-white">
                   Digital Transformation Explained
                 </h3>
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-sm text-gray-400 mb-3">
                   5 minutes • Digital Innovation
                 </p>
-                <p className="text-sm">
+                <p className="text-sm text-gray-300">
                   Understanding digital transformation and its three core principles for organizations and nonprofits.
                 </p>
               </div>
@@ -197,13 +197,13 @@ export default function Home() {
                 ></iframe>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 text-white">
                   The AI Revolution - Eric Schmidt
                 </h3>
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-sm text-gray-400 mb-3">
                   TED Talk • Former Google CEO
                 </p>
-                <p className="text-sm">
+                <p className="text-sm text-gray-300">
                   Former Google CEO Eric Schmidt discusses the arrival of non-human intelligence and its profound implications.
                 </p>
               </div>
@@ -217,7 +217,7 @@ export default function Home() {
         <div className="container py-8">
           <div className="space-y-4">
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
               <Input
                 type="text"
                 placeholder="Search by name, organization, or focus area..."
@@ -229,8 +229,8 @@ export default function Home() {
 
             <div className="flex flex-wrap gap-3">
               <div className="flex items-center gap-2">
-                <Filter className="w-4 h-4 text-muted-foreground" />
-                <span className="text-sm font-medium">Filters:</span>
+                <Filter className="w-4 h-4 text-gray-400" />
+                <span className="text-sm font-medium text-white">Filters:</span>
               </div>
 
               <Select value={selectedType} onValueChange={setSelectedType}>
@@ -282,7 +282,7 @@ export default function Home() {
               )}
             </div>
 
-            <div className="text-sm text-muted-foreground">
+            <div className="text-sm text-gray-300">
               Showing {filteredFunding.length} of {fundingData?.funding_sources.length || 0} funding opportunities
             </div>
           </div>
@@ -294,11 +294,11 @@ export default function Home() {
         {!fundingData ? (
           <div className="text-center py-12">
             <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-            <p className="mt-4 text-muted-foreground">Loading funding opportunities...</p>
+            <p className="mt-4 text-gray-300">Loading funding opportunities...</p>
           </div>
         ) : filteredFunding.length === 0 ? (
           <div className="text-center py-12">
-            <p className="text-lg text-muted-foreground mb-4">No funding opportunities found matching your criteria.</p>
+            <p className="text-lg text-gray-300 mb-4">No funding opportunities found matching your criteria.</p>
             <Button onClick={resetFilters}>Clear Filters</Button>
           </div>
         ) : (
@@ -313,12 +313,12 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-black border-t border-gray-800 mt-12">
         <div className="container py-8">
-          <div className="text-center text-sm text-muted-foreground">
+          <div className="text-center text-sm text-gray-400">
             <p className="mb-2">
-              <strong>Africa Digitalization Funding Finder</strong> - Empowering nonprofits with funding information
+              <strong className="text-white">Africa Digitalization Funding Finder</strong> - Empowering nonprofits with funding information
             </p>
             <p>
-              Created to support <strong>Diva Laser Foundation</strong> and other organizations working on digital transformation in Africa
+              Created to support <strong className="text-white">Diva Laser Foundation</strong> and other organizations working on digital transformation in Africa
             </p>
           </div>
         </div>

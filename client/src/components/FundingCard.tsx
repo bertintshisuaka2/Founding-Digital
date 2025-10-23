@@ -64,23 +64,23 @@ export default function FundingCard({ funding }: FundingCardProps) {
             {funding.deadline_type}
           </Badge>
         </div>
-        <CardTitle className="text-xl leading-tight">{funding.name}</CardTitle>
-        <CardDescription className="flex items-center gap-1">
+        <CardTitle className="text-xl leading-tight text-white">{funding.name}</CardTitle>
+        <CardDescription className="flex items-center gap-1 text-gray-300">
           <span className="font-medium">{funding.organization}</span>
-          <span className="text-muted-foreground">•</span>
+          <span className="text-gray-400">•</span>
           <MapPin className="w-3 h-3" />
           <span>{funding.region}</span>
         </CardDescription>
       </CardHeader>
       
       <CardContent className="flex-1 space-y-4">
-        <div className="flex items-center gap-2 text-lg font-semibold text-primary">
+        <div className="flex items-center gap-2 text-lg font-semibold text-green-400">
           <DollarSign className="w-5 h-5" />
           {getGrantRange()}
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-2">Focus Areas</h4>
+          <h4 className="text-sm font-semibold mb-2 text-white">Focus Areas</h4>
           <div className="flex flex-wrap gap-1.5">
             {funding.focus_areas.slice(0, 4).map((area, idx) => (
               <Badge key={idx} variant="outline" className="text-xs">
@@ -103,10 +103,10 @@ export default function FundingCard({ funding }: FundingCardProps) {
               View Details
             </button>
           </DialogTrigger>
-          <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+          <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-gray-800 text-white border-gray-700">
             <DialogHeader>
-              <DialogTitle className="text-2xl">{funding.name}</DialogTitle>
-              <DialogDescription className="text-base">
+              <DialogTitle className="text-2xl text-white">{funding.name}</DialogTitle>
+              <DialogDescription className="text-base text-gray-300">
                 {funding.organization} • {funding.region}
               </DialogDescription>
             </DialogHeader>
@@ -114,14 +114,14 @@ export default function FundingCard({ funding }: FundingCardProps) {
             <div className="space-y-6 py-4">
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <DollarSign className="w-5 h-5 text-primary" />
-                  <h3 className="font-semibold text-lg">Funding Amount</h3>
+                  <DollarSign className="w-5 h-5 text-green-400" />
+                  <h3 className="font-semibold text-lg text-white">Funding Amount</h3>
                 </div>
-                <p className="text-2xl font-bold text-primary">{getGrantRange()}</p>
+                <p className="text-2xl font-bold text-green-400">{getGrantRange()}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2">Focus Areas</h3>
+                <h3 className="font-semibold text-lg mb-2 text-white">Focus Areas</h3>
                 <div className="flex flex-wrap gap-2">
                   {funding.focus_areas.map((area, idx) => (
                     <Badge key={idx} variant="secondary">
@@ -132,8 +132,8 @@ export default function FundingCard({ funding }: FundingCardProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2">Eligible Applicants</h3>
-                <ul className="list-disc list-inside space-y-1 text-sm">
+                <h3 className="font-semibold text-lg mb-2 text-white">Eligible Applicants</h3>
+                <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
                   {funding.eligible_applicants.map((applicant, idx) => (
                     <li key={idx}>{applicant}</li>
                   ))}
@@ -141,30 +141,30 @@ export default function FundingCard({ funding }: FundingCardProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2">Application Process</h3>
-                <p className="text-sm leading-relaxed">{funding.application_process}</p>
+                <h3 className="font-semibold text-lg mb-2 text-white">Application Process</h3>
+                <p className="text-sm leading-relaxed text-gray-300">{funding.application_process}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2">Selection Criteria</h3>
+                <h3 className="font-semibold text-lg mb-2 text-white">Selection Criteria</h3>
                 <ul className="space-y-2">
                   {funding.selection_criteria.map((criteria, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm">
-                      <CheckCircle2 className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
-                      <span>{criteria}</span>
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-300">{criteria}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="bg-green-50 dark:bg-green-950 p-4 rounded-lg">
-                <h3 className="font-semibold text-lg mb-2 text-green-900 dark:text-green-100">
+              <div className="bg-green-950 p-4 rounded-lg border border-green-800">
+                <h3 className="font-semibold text-lg mb-2 text-green-300">
                   Success Tips
                 </h3>
                 <ul className="space-y-2">
                   {funding.success_tips.map((tip, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-green-800 dark:text-green-200">
-                      <CheckCircle2 className="w-4 h-4 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
+                    <li key={idx} className="flex items-start gap-2 text-sm text-green-200">
+                      <CheckCircle2 className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
                       <span>{tip}</span>
                     </li>
                   ))}
