@@ -250,10 +250,43 @@ export default function AfricaRegions() {
         <div className="text-center mb-8 bg-gradient-to-r from-blue-900 to-yellow-900 p-8 rounded-lg">
           <h3 className="text-3xl font-bold text-white mb-2">🇨🇩 {drc.country_name}</h3>
           <p className="text-xl text-yellow-300 mb-4">Heart of Africa - Digital Transformation Hub</p>
-          <div className="flex justify-center gap-4 text-sm">
+          <div className="flex justify-center gap-4 text-sm mb-6">
             <Badge className="bg-blue-950 text-blue-300 border-blue-700">Capital: {drc.capital}</Badge>
             <Badge className="bg-green-950 text-green-300 border-green-700">{drc.provinces} Provinces</Badge>
             <Badge className="bg-purple-950 text-purple-300 border-purple-700">Population: {formatNumber(drc.population)}</Badge>
+          </div>
+          
+          {/* Leadership Section */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-8">
+            <Card className="bg-gray-900 border-blue-700">
+              <CardContent className="pt-6 text-center">
+                <div className="mb-4">
+                  <img 
+                    src="/tshisekedi.jpg" 
+                    alt="President Félix Tshisekedi" 
+                    className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-blue-500"
+                  />
+                </div>
+                <h4 className="text-lg font-bold text-white mb-1">Félix Tshisekedi</h4>
+                <p className="text-sm text-blue-300 mb-2">President of the Democratic Republic of Congo</p>
+                <p className="text-xs text-gray-400">Leading DRC's digital transformation vision</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-gray-900 border-green-700">
+              <CardContent className="pt-6 text-center">
+                <div className="mb-4">
+                  <img 
+                    src="/minister-digital.jpg" 
+                    alt="Minister of Digital Economy" 
+                    className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-green-500"
+                  />
+                </div>
+                <h4 className="text-lg font-bold text-white mb-1">Désiré-Cashmir Kolongele</h4>
+                <p className="text-sm text-green-300 mb-2">Minister of Digital Economy & Telecommunications</p>
+                <p className="text-xs text-gray-400">Driving digital infrastructure development</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
