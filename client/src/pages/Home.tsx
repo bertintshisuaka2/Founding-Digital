@@ -8,6 +8,7 @@ import NewsActivities from "@/components/NewsActivities";
 import WorldStats from "@/components/WorldStats";
 import AfricaRegions from "@/components/AfricaRegions";
 import FounderSection from "@/components/FounderSection";
+import ContactForm from "@/components/ContactForm";
 import { Search, Filter, Globe, TrendingUp, Users, Sparkles } from "lucide-react";
 
 interface FundingSource {
@@ -326,6 +327,9 @@ export default function Home() {
 
       {/* Founder Section */}
       <FounderSection />
+
+      {/* Contact Form Section */}
+      <ContactForm />
 
       {/* Footer */}
       <footer className="bg-black text-gray-400 py-8 border-t border-gray-800">
