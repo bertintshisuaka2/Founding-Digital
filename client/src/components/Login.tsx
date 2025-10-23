@@ -14,7 +14,7 @@ interface LoginProps {
 export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps) {
   const [pin, setPin] = useState("");
   const [error, setError] = useState(false);
-  const CORRECT_PIN = "1234"; // You can change this to any 4-digit PIN
+  const CORRECT_PIN = "3495"; // You can change this to any 4-digit PIN
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -55,8 +55,12 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-950 to-black flex items-center justify-center p-4">
       <Card className="w-full max-w-md bg-gray-900 border-yellow-700">
         <CardHeader className="text-center">
-          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-yellow-600 to-green-600 rounded-full flex items-center justify-center mb-4">
-            <Lock className="w-8 h-8 text-white" />
+          <div className="mb-6">
+            <img 
+              src="/bertin-login.png" 
+              alt="Bertin Tshisuaka" 
+              className="mx-auto w-32 h-32 rounded-full object-cover border-4 border-yellow-500 shadow-lg"
+            />
           </div>
           <CardTitle className="text-2xl text-white">
             Africa Funding Finder
