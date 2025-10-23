@@ -129,6 +129,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Listen to Digital Leaders Section */}
+      <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-950 py-16">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Listen to the Leaders of Digital Innovation
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Gain insights from visionary leaders and inventors shaping the future of AI and digital transformation
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Video 1: Digital Transformation */}
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/364k7duI2m4"
+                  title="Digital Transformation in 5 Minutes"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
+                  Digital Transformation Explained
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  5 minutes • Digital Innovation
+                </p>
+                <p className="text-sm">
+                  Understanding digital transformation and its three core principles for organizations and nonprofits.
+                </p>
+              </div>
+            </div>
+
+            {/* Video 2: AI Leadership */}
+            <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/id4YRO7G0wE"
+                  title="The AI Revolution - Eric Schmidt"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">
+                  The AI Revolution - Eric Schmidt
+                </h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  TED Talk • Former Google CEO
+                </p>
+                <p className="text-sm">
+                  Former Google CEO Eric Schmidt discusses the arrival of non-human intelligence and its profound implications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Search and Filter Section */}
       <section className="bg-white dark:bg-gray-900 border-b">
         <div className="container py-8">
