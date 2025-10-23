@@ -88,6 +88,25 @@ export default function Home() {
 
   return (
     <div className="min-h-screen">
+      {/* Header Section */}
+      <header className="bg-white dark:bg-gray-900 border-b">
+        <div className="container py-4">
+          <div className="flex items-center gap-4">
+            <img 
+              src="/bertin-profile.png" 
+              alt="Bertin Tshisuaka" 
+              className="w-16 h-16 rounded-full object-cover border-2 border-blue-700"
+            />
+            <div>
+              <h2 className="text-xl font-bold text-blue-900 dark:text-blue-100">
+                Diva Laser Software Solutions
+              </h2>
+              <p className="text-sm text-muted-foreground">Bertin Tshisuaka</p>
+            </div>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-700 via-blue-800 to-blue-900 text-white relative overflow-hidden">
         <div className="container py-16 md:py-24 relative z-10">
