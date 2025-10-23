@@ -10,7 +10,7 @@ export default function FounderSection() {
     en: {
       title: "Meet the Founder",
       name: "Bertin Tshisuaka",
-      role: "Founder & CEO, Diva Laser Software Solutions",
+      role: "Founder and President of Diva Laser",
       subtitle: "Software Engineer and Full Stack Web Developer",
       speech: `Dear friends, partners, and fellow advocates for digital transformation,
 
@@ -33,7 +33,7 @@ Thank you for your time, your commitment, and your belief in Africa's digital fu
     fr: {
       title: "Rencontrez le Fondateur",
       name: "Bertin Tshisuaka",
-      role: "Fondateur et PDG, Diva Laser Software Solutions",
+      role: "Fondateur et Président de Diva Laser",
       subtitle: "Ingénieur Logiciel et Développeur Web Full Stack",
       speech: `Chers amis, partenaires et défenseurs de la transformation numérique,
 
