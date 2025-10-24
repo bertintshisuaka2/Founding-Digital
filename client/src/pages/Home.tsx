@@ -136,18 +136,42 @@ export default function Home() {
       {/* Header */}
       <header className="bg-gradient-to-r from-green-900 via-black to-green-900 border-b border-yellow-700">
         <div className="container py-4">
-          <div className="flex items-center gap-4">
-            <img 
-              src="/bertin-profile.png" 
-              alt="Bertin Tshisuaka" 
-              className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400"
-            />
-            <div>
-              <h2 className="text-xl font-bold text-yellow-400">
-                Diva Laser Software Solutions
-              </h2>
-              <p className="text-sm text-yellow-200">Developed by Bertin Tshisuaka</p>
-              <p className="text-xs text-yellow-300">Software Engineer and Full Stack Web Developer</p>
+          <div className="flex items-center justify-between gap-4">
+            {/* Left: University of Phoenix Logo */}
+            <div className="flex-shrink-0">
+              <img 
+                src="/uophoenix-logo.png" 
+                alt="University of Phoenix" 
+                className="h-12 w-auto object-contain"
+              />
+            </div>
+            
+            {/* Center: Profile and Info */}
+            <div className="flex items-center gap-4 flex-1 justify-center">
+              <img 
+                src="/bertin-profile.png" 
+                alt="Bertin Tshisuaka" 
+                className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400"
+              />
+              <div>
+                <h2 className="text-xl font-bold text-yellow-400">
+                  Diva Laser Software Solutions
+                </h2>
+                <p className="text-sm text-yellow-200">Developed by Bertin Tshisuaka</p>
+                <p className="text-xs text-yellow-300">Software Engineer and Full Stack Web Developer</p>
+                <p className="text-xs text-yellow-200 mt-1">
+                  Need assistance? Text Bertin Tshisuaka at <a href="tel:+16789796811" className="text-yellow-400 hover:underline">+1 (678) 979-6811</a>
+                </p>
+              </div>
+            </div>
+            
+            {/* Right: Georgia Tech Logo */}
+            <div className="flex-shrink-0">
+              <img 
+                src="/gatech-logo.png" 
+                alt="Georgia Tech" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
           </div>
         </div>
