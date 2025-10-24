@@ -55,11 +55,26 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-950 to-black flex items-center justify-center p-4">
       <Card className="w-full max-w-md bg-gray-900 border-yellow-700">
         <CardHeader className="text-center">
-          <div className="mb-6">
+          <div className="mb-6 flex items-center justify-center gap-8">
+            {/* University of Phoenix Logo */}
+            <img 
+              src="/uophoenix-logo.png" 
+              alt="University of Phoenix" 
+              className="w-20 h-20 object-contain"
+            />
+            
+            {/* Profile Photo */}
             <img 
               src="/bertin-login.png" 
               alt="Bertin Tshisuaka" 
-              className="mx-auto w-32 h-32 rounded-full object-cover border-4 border-yellow-500 shadow-lg"
+              className="w-32 h-32 rounded-full object-cover border-4 border-yellow-500 shadow-lg"
+            />
+            
+            {/* Georgia Tech Logo */}
+            <img 
+              src="/gatech-logo.png" 
+              alt="Georgia Tech" 
+              className="w-20 h-20 object-contain"
             />
           </div>
           <CardTitle className="text-2xl text-white">
