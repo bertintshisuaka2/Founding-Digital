@@ -52,8 +52,18 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-950 to-black flex items-center justify-center p-4">
-      <Card className="w-full max-w-md bg-gray-900 border-yellow-700">
+    <div 
+      className="min-h-screen flex items-center justify-center p-4 relative"
+      style={{
+        backgroundImage: 'url(/gatech-campus.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Dark overlay for better readability */}
+      <div className="absolute inset-0 bg-black/60"></div>
+      <Card className="w-full max-w-md bg-gray-900 border-yellow-700 relative z-10">
         <CardHeader className="text-center">
           <div className="mb-6 flex items-center justify-center gap-8">
             {/* University of Phoenix Logo */}
