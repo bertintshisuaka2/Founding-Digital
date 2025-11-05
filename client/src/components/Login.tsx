@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { Lock, LogOut, AlertCircle } from "lucide-react";
 import { toast } from "sonner";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface LoginProps {
   onLogin: () => void;
@@ -12,6 +13,7 @@ interface LoginProps {
 }
 
 export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps) {
+  const { t } = useLanguage();
   const [pin, setPin] = useState("");
   const [error, setError] = useState(false);
   const CORRECT_PIN = "3495"; // You can change this to any 4-digit PIN
@@ -45,7 +47,7 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
           className="bg-red-900 hover:bg-red-800 text-white border-red-700"
         >
           <LogOut className="w-4 h-4 mr-2" />
-          Logout
+          {t("logout")}
         </Button>
       </div>
     );
@@ -88,10 +90,10 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
             />
           </div>
           <CardTitle className="text-2xl text-white">
-            Africa Funding Finder
+            {t("login.title")}
           </CardTitle>
           <p className="text-gray-400 text-sm mt-2">
-            Enter your 4-digit PIN to access the platform
+            {t("login.subtitle")}
           </p>
         </CardHeader>
         <CardContent>
@@ -103,7 +105,7 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
                 maxLength={4}
                 value={pin}
                 onChange={handlePinChange}
-                placeholder="Enter 4-digit PIN"
+                placeholder={t("login.placeholder")}
                 className={`text-center text-2xl tracking-widest bg-gray-800 border-gray-700 text-white ${
                   error ? "border-red-500" : ""
                 }`}
@@ -116,14 +118,14 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
                 <div className="flex items-start gap-3">
                   <AlertCircle className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
                   <div>
-                    <h4 className="text-red-300 font-semibold mb-1">Incorrect PIN</h4>
+                    <h4 className="text-red-300 font-semibold mb-1">{t("login.error.title")}</h4>
                     <p className="text-red-200 text-sm mb-2">
-                      The PIN you entered is incorrect. Please try again or contact support for assistance.
+                      {t("login.error.message")}
                     </p>
                     <div className="bg-red-900 rounded p-3 mt-3">
-                      <p className="text-white text-sm font-semibold mb-1">Need Help?</p>
+                      <p className="text-white text-sm font-semibold mb-1">{t("login.error.help")}</p>
                       <p className="text-red-100 text-sm">
-                        Text <span className="font-bold">Bertin Tshisuaka</span> for assistance
+                        {t("login.error.contact")}
                       </p>
                       <a 
                         href="sms:+16789796811" 
@@ -142,16 +144,16 @@ export default function Login({ onLogin, isAuthenticated, onLogout }: LoginProps
               className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white text-lg py-6"
               disabled={pin.length !== 4}
             >
-              Login
+              {t("login.button")}
             </Button>
           </form>
 
           <div className="mt-6 text-center">
             <div className="bg-gradient-to-r from-yellow-900 to-green-900 p-4 rounded-lg border border-yellow-700">
               <div className="text-xl font-bold text-yellow-300 mb-1">Diva Laser</div>
-              <div className="text-sm text-white">Software Solutions</div>
+              <div className="text-sm text-white">{t("footer.software")}</div>
               <div className="text-xs text-gray-300 mt-2">
-                Bridging the Digital Gap in Africa
+                {t("login.tagline")}
               </div>
             </div>
           </div>

@@ -122,6 +122,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-900">
+      {/* Language Switcher */}
+      {isAuthenticated && <LanguageSwitcher />}
+      
       {/* Logout Button */}
       {isAuthenticated && (
         <div className="fixed top-4 right-4 z-50">
@@ -131,7 +134,7 @@ export default function Home() {
             className="bg-red-900 hover:bg-red-800 text-white border-red-700"
           >
             <LogOut className="w-4 h-4 mr-2" />
-            Logout
+            {t("logout")}
           </Button>
         </div>
       )}
@@ -158,12 +161,12 @@ export default function Home() {
               />
               <div>
                 <h2 className="text-xl font-bold text-yellow-400">
-                  Diva Laser Software Solutions
+                  {t("header.title")}
                 </h2>
-                <p className="text-sm text-yellow-200">Developed by Bertin Tshisuaka</p>
-                <p className="text-xs text-yellow-300">Software Engineer and Full Stack Web Developer</p>
+                <p className="text-sm text-yellow-200">{t("header.developed")}</p>
+                <p className="text-xs text-yellow-300">{t("header.role")}</p>
                 <p className="text-xs text-yellow-200 mt-1">
-                  Need assistance? Text Bertin Tshisuaka at <a href="tel:+16789796811" className="text-yellow-400 hover:underline">+1 (678) 979-6811</a>
+                  {t("header.assistance")} <a href="tel:+16789796811" className="text-yellow-400 hover:underline">+1 (678) 979-6811</a>
                 </p>
               </div>
             </div>
@@ -187,26 +190,26 @@ export default function Home() {
             <div>
               <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white border-0">
                 <Sparkles className="w-3 h-3 mr-1" />
-                15 Funding Sources Available
+                15 {t("hero.badge")}
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                Find Funding for African Digitalization Projects
+                {t("hero.title")}
               </h1>
               <p className="text-lg md:text-xl text-blue-100 mb-8">
-                Comprehensive database of grants, banks, and financial institutions supporting digital transformation across Africa. Discover opportunities for Diva Laser Foundation and other nonprofits.
+                {t("hero.subtitle")}
               </p>
               <div className="flex flex-wrap gap-6 text-sm">
                 <div className="flex items-center gap-2">
                   <Globe className="w-5 h-5 text-green-400" />
-                  <span>Pan-African Coverage</span>
+                  <span>{t("hero.feature1")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <TrendingUp className="w-5 h-5 text-green-400" />
-                  <span>$100M+ in Funding</span>
+                  <span>$100M+ {t("hero.feature2")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-green-400" />
-                  <span>For Nonprofits & NGOs</span>
+                  <span>{t("hero.feature3")}</span>
                 </div>
               </div>
             </div>
@@ -229,10 +232,10 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-              Listen to the Leaders of Digital Innovation
+              {t("leaders.title")}
             </h2>
             <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Gain insights from visionary leaders and inventors shaping the future of AI and digital transformation
+              {t("leaders.subtitle")}
             </p>
           </div>
 
@@ -296,7 +299,7 @@ export default function Home() {
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
               <Input
                 type="text"
-                placeholder="Search by name, organization, or focus area..."
+                placeholder={t("search.placeholder")}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="pl-10 h-12 text-base"
@@ -306,7 +309,7 @@ export default function Home() {
             <div className="flex flex-wrap gap-3">
               <div className="flex items-center gap-2">
                 <Filter className="w-4 h-4 text-gray-400" />
-                <span className="text-sm font-medium text-white">Filters:</span>
+                <span className="text-sm font-medium text-white">{t("filters.title")}</span>
               </div>
 
               <Select value={selectedType} onValueChange={setSelectedType}>
@@ -314,7 +317,7 @@ export default function Home() {
                   <SelectValue placeholder="Type" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Types</SelectItem>
+                  <SelectItem value="all">{t("filters.allTypes")}</SelectItem>
                   {types.map((type) => (
                     <SelectItem key={type} value={type}>
                       {type}
@@ -328,7 +331,7 @@ export default function Home() {
                   <SelectValue placeholder="Region" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Regions</SelectItem>
+                  <SelectItem value="all">{t("filters.allRegions")}</SelectItem>
                   {regions.map((region) => (
                     <SelectItem key={region} value={region}>
                       {region}
@@ -342,7 +345,7 @@ export default function Home() {
                   <SelectValue placeholder="Deadline" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="all">All Deadlines</SelectItem>
+                  <SelectItem value="all">{t("filters.allDeadlines")}</SelectItem>
                   {deadlineTypes.map((deadline) => (
                     <SelectItem key={deadline} value={deadline}>
                       {deadline}
@@ -353,13 +356,13 @@ export default function Home() {
 
               {(searchTerm || selectedType !== "all" || selectedRegion !== "all" || selectedDeadline !== "all") && (
                 <Button variant="outline" onClick={resetFilters} size="sm">
-                  Clear Filters
+                  {t("filters.clear")}
                 </Button>
               )}
             </div>
 
             <div className="text-sm text-gray-300">
-              Showing {filteredFunding.length} of {fundingData?.funding_sources.length || 0} funding opportunities
+              {t("search.showing")} {filteredFunding.length} {t("search.of")} {fundingData?.funding_sources.length || 0} {t("search.opportunities")}
             </div>
           </div>
         </div>

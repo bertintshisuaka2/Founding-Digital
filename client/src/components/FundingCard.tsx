@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { ExternalLink, DollarSign, Calendar, MapPin, CheckCircle2 } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface FundingSource {
   id: number;
@@ -29,6 +30,7 @@ interface FundingCardProps {
 }
 
 export default function FundingCard({ funding }: FundingCardProps) {
+  const { t } = useLanguage();
   const formatAmount = (amount: number) => {
     if (amount >= 1000000) {
       return `$${(amount / 1000000).toFixed(1)}M`;
@@ -80,7 +82,7 @@ export default function FundingCard({ funding }: FundingCardProps) {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold mb-2 text-white">Focus Areas</h4>
+          <h4 className="text-sm font-semibold mb-2 text-white">{t("card.focusAreas")}</h4>
           <div className="flex flex-wrap gap-1.5">
             {funding.focus_areas.slice(0, 4).map((area, idx) => (
               <Badge key={idx} variant="outline" className="text-xs text-yellow-400 border-yellow-400">
@@ -100,7 +102,7 @@ export default function FundingCard({ funding }: FundingCardProps) {
         <Dialog>
           <DialogTrigger asChild>
             <button className="flex-1 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
-              View Details
+              {t("card.viewDetails")}
             </button>
           </DialogTrigger>
           <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-gray-800 text-white border-gray-700">
@@ -115,13 +117,13 @@ export default function FundingCard({ funding }: FundingCardProps) {
               <div>
                 <div className="flex items-center gap-2 mb-2">
                   <DollarSign className="w-5 h-5 text-green-400" />
-                  <h3 className="font-semibold text-lg text-white">Funding Amount</h3>
+                  <h3 className="font-semibold text-lg text-white">{funding.grant_range_min ? t("card.grantRange") : funding.total_investment ? t("card.totalInvestment") : t("card.totalFund")}</h3>
                 </div>
                 <p className="text-2xl font-bold text-green-400">{getGrantRange()}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2 text-white">Focus Areas</h3>
+                <h3 className="font-semibold text-lg mb-2 text-white">{t("card.focusAreas")}</h3>
                 <div className="flex flex-wrap gap-2">
                   {funding.focus_areas.map((area, idx) => (
                     <Badge key={idx} variant="secondary" className="text-yellow-400 bg-yellow-950 border-yellow-600">
@@ -132,7 +134,7 @@ export default function FundingCard({ funding }: FundingCardProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2 text-white">Eligible Applicants</h3>
+                <h3 className="font-semibold text-lg mb-2 text-white">{t("card.eligibleApplicants")}</h3>
                 <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
                   {funding.eligible_applicants.map((applicant, idx) => (
                     <li key={idx}>{applicant}</li>
@@ -141,12 +143,12 @@ export default function FundingCard({ funding }: FundingCardProps) {
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2 text-white">Application Process</h3>
+                <h3 className="font-semibold text-lg mb-2 text-white">{t("card.applicationProcess")}</h3>
                 <p className="text-sm leading-relaxed text-gray-300">{funding.application_process}</p>
               </div>
 
               <div>
-                <h3 className="font-semibold text-lg mb-2 text-white">Selection Criteria</h3>
+                <h3 className="font-semibold text-lg mb-2 text-white">{t("card.selectionCriteria")}</h3>
                 <ul className="space-y-2">
                   {funding.selection_criteria.map((criteria, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-sm">
@@ -159,7 +161,7 @@ export default function FundingCard({ funding }: FundingCardProps) {
 
               <div className="bg-green-950 p-4 rounded-lg border border-green-800">
                 <h3 className="font-semibold text-lg mb-2 text-green-300">
-                  Success Tips
+                  {t("card.successTips")}
                 </h3>
                 <ul className="space-y-2">
                   {funding.success_tips.map((tip, idx) => (
@@ -175,7 +177,7 @@ export default function FundingCard({ funding }: FundingCardProps) {
                 <Button asChild className="flex-1">
                   <a href={funding.website} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Visit Website
+                    {t("card.website")}
                   </a>
                 </Button>
               </div>
