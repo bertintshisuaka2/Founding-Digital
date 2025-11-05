@@ -10,6 +10,8 @@ import AfricaRegions from "@/components/AfricaRegions";
 import FounderSection from "@/components/FounderSection";
 import ContactForm from "@/components/ContactForm";
 import Login from "@/components/Login";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/contexts/LanguageContext";
 import { Search, Filter, Globe, TrendingUp, Users, Sparkles, LogOut } from "lucide-react";
 
 interface FundingSource {
@@ -37,6 +39,7 @@ interface FundingData {
 }
 
 export default function Home() {
+  const { t } = useLanguage();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [fundingData, setFundingData] = useState<FundingData | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
